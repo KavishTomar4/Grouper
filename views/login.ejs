@@ -1,0 +1,123 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouper</title>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+    <style>
+         body {
+            margin : 0 auto;
+            background : linear-gradient(to top ,  #242424 ,  #4766ff  );
+         }
+         #title-container {
+   
+            color : white;
+            font-family: 'Staatliches', cursive;
+   
+   
+            background: #242424;
+            display: flex;
+            flex-direction: row;
+  
+            justify-content: center;
+            align-items: center;
+
+            width : 100%;
+            height : 50px
+  
+
+        }
+        
+        #form-container{
+           
+        background: #242424;
+        display: flex;
+        width : 100%;
+        margin-top: 3em;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+       
+        
+
+        }
+        #login-title-container{
+            color: white;
+            font-family : 'Roboto', sans-serif;
+            font-size: 305%;
+        }
+        #form{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            flex-wrap: wrap;
+            
+
+        }
+        .inputs{
+            min-width : 20em;
+            max-width : 50em;
+            height : 3em;
+            margin-top : 4em;
+            border :  0.5em solid white;
+            border-radius: 0.5em;
+            box-sizing:border-box;
+            font-family: 'Roboto', sans-serif;
+              font-family: 'Roboto Condensed', sans-serif;
+              }                                                                                                                       
+              #login-btn{
+              background: #946cd9;
+              border :  0.5em solid #946cd9;
+              font-family: 'Roboto', sans-serif;
+              font-family: 'Roboto Condensed', sans-serif;
+              font-size: 1em;
+              margin-top : 4em;
+              margin-bottom: 10em;
+              text-align: center;
+              display : flex;
+              flex-direction: row;
+              justify-content: center;
+              align-items: center;
+              width : 15em;
+              color : white;
+              border-radius: 0.5em;
+
+          }
+          
+          
+        </style>
+</head>
+<body>
+    
+    <header>
+        <div id = "title-container" class = "container">
+            <h1 id = "title">Grouper</h1>
+            </div>
+
+       </header>
+
+       <main>
+           <div id = "form-container" class = "container">
+             <div id = "login-title-container" class = "container">
+                 <p id = "login-title">Login</p>
+                  </div>
+               
+               <form action = "" method ="POST" id = "form">
+                   <input type = "text" name = "username" id = "username" class = "inputs" placeholder="Username"/>
+                   <input type = "password" name = "password" id = "password" class = "inputs" placeholder="Password"/>
+                  
+               
+
+                   <input type = "submit" value = "Login" id = "login-btn" class = "btn" />
+                   </form>
+            
+               
+            </div>
+           </main>
+
+        </body>
+</html>
