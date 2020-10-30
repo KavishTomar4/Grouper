@@ -19,8 +19,9 @@ router.get('/login' , (req , res)=>{
 router.post('/register' ,upload.single('image'), async(req , res)=>{
 
   let files = await cloudinary.v2.uploader.upload(req.file.path);
+  
 
-  res.send(files)
+  res.render('cropper' , {'path' : files.url});
 
 
 })
